@@ -158,6 +158,7 @@ def load_data(file_path):
 file_path = "每日融资信息.xlsx"
 try:
     df = load_data(file_path)
+    df = df.dropna(subset=['公司'])
 except Exception as e:
     st.error(f"读取文件失败，请检查文件路径。错误信息：{e}")
     st.stop()
