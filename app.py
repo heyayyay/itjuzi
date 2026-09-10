@@ -155,7 +155,7 @@ def load_data(file_path):
     df = df.fillna("未知")
     return df
 
-file_path = "每日融资信息_26-6-2.xlsx"
+file_path = "每日融资信息.xlsx"
 try:
     df = load_data(file_path)
 except Exception as e:
